@@ -50,18 +50,25 @@ router.put('/tasks/:id', (req, res) => {
 });
 
 // Elimina un task esistente
-router.delete('/tasks/:id', (req, res) => {
-    const { id } = req.params;
+router.delete('/tasks/completed', (req, res) => {
     try {
-        const task = Task.findByIdAndDelete(id).then((task) => {
-            if (!task) {
-                return res.status(404).json({ message: 'Task non trovato' });
-            }
+        Task.deleteMany({ completed : true}).then((task) => {
             res.status(204).end();
         });
     } catch (e: any) {
         res.status(400).json({ message: e.message });
     }
 });
+
+router.delete('/tasks/clearAll', (req, res) => {
+    try {
+        Task.deleteMany({}).then((task) => {
+            res.status(204).end();
+        });
+    } catch (e: any) {
+        res.status(400).json({ message: e.message });
+    }
+});
+
 
 export default router;
