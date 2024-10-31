@@ -12,3 +12,8 @@ Frontend: Avvia l'app Angular
 cd ../frontend
 npm start
 ```
+
+Backend Python
+```shell
+python manage.py runserver 3000
+```
