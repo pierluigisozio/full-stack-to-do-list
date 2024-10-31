@@ -1,0 +1,77 @@
+@import 'themes/colors.scss';
+
+.main-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  height: 75vw;
+  width: 75vw;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+li.completed {
+  color: $completed-task-color;
+  text-decoration: line-through;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li span {
+  transition: color 0.3s ease;
+}
+
+h1 {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, tranform 0.2s;
+}
+
+button:hover{
+  background-color: $secondary-color;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(76,175,80,0.6)
+}
+
+input.expand-enter-active {
+  transform: scaleY(1);
+  transition: transform 5s ease;
+}
+
+input.expand-exit-active {
+  transform: scaleY(0);
+  transition: transform 10s ease;
+}
+
+
