@@ -11,9 +11,6 @@ The application is a simple **Todo List** that allows users to:
 
 The project uses **MongoDB** as the database for both backends. In the case of Express.js, it uses **Mongoose** as an ORM, while **PyMongo** is used for the Django backend.
 
-![image](https://github.com/user-attachments/assets/a6307d67-2400-4f22-8678-d9bd6b65c115) ![image](https://github.com/user-attachments/assets/c443811f-a3a2-4a51-a1de-af6be9f011a4) ![image](https://github.com/user-attachments/assets/d3bdce46-18a4-40ae-b5ef-d233856c3ea3)
-
-
 ## Tech Stack
 - **Frontend**: Angular
 - **Backend**: Express.js, Django
@@ -76,12 +73,8 @@ This will start the Django backend on port **3000**.
 - The project was a learning exercise; therefore, it is **not responsive**.
 - Focus was on framework learning rather than CSS, although the design is kept simple and pleasing.
 
-![image](https://github.com/user-attachments/assets/a6307d67-2400-4f22-8678-d9bd6b65c115)
 
-![image](https://github.com/user-attachments/assets/c443811f-a3a2-4a51-a1de-af6be9f011a4)
-
-![image](https://github.com/user-attachments/assets/d3bdce46-18a4-40ae-b5ef-d233856c3ea3)
-
+![image](https://github.com/user-attachments/assets/a6307d67-2400-4f22-8678-d9bd6b65c115) ![image](https://github.com/user-attachments/assets/c443811f-a3a2-4a51-a1de-af6be9f011a4) ![image](https://github.com/user-attachments/assets/d3bdce46-18a4-40ae-b5ef-d233856c3ea3)
 
 
 
