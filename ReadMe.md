@@ -19,7 +19,6 @@ The project uses **MongoDB** as the database for both backends. In the case of E
 ### Key Features
 - **Simple Todo List** functionality.
 - Two backend implementations (Node.js/Express and Python/Django).
-- **Non-responsive design**: The focus was on learning the frameworks without spending too much time on CSS. However, effort was made to keep the design aesthetically pleasing.
 
 ## Setup and Running the Project
 
