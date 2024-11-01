@@ -1,14 +1,16 @@
 <div class="todo-component-container">
   <span *ngIf="tasks.length === 0 && !creating"
         class="description">Click the button below to add items</span>
+
   <ul>
     <li *ngFor="let task of tasks" class="fade-in"><input
       type="checkbox"
       [checked]="task.completed"
       (change)="toggleComplete(task)"
-    ><span class="{{task.completed ? 'completed' : ''}}">{{task.title}}</span></li>
+    ><span [ngClass]="{'completed' : task.completed}">{{task.title}}</span></li>
   </ul>
-  <div *ngIf="creating">
+
+  <ng-container *ngIf="creating">
     <input
       #taskInput
       [(ngModel)]="newTaskTitle"
@@ -16,7 +18,8 @@
       (keydown)="onEnterTask($event)"
       ngClass="{'expand-enter-active': creating, 'expand-exit-active': !creating}"
     />
-  </div>
+  </ng-container>
+
   <div class="button-container">
     <button (click)="switchCreating()">{{creating ? "Close" : "Add Task"}}</button>
     <button (click)="clearCompleted()" *ngIf="tasks.length > 0">Clear completed</button>
