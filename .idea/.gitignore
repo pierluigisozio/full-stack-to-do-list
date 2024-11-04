@@ -8,6 +8,7 @@
 
 # Ignore build output for frontend and backend
 frontend/dist/
+frontend/.angular
 backend/build/
 
 # Ignore Node.js lock files
